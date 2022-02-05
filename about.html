@@ -27,9 +27,9 @@ style="background:rgba(0,0,0,0.6);height:90px;width:100%;"><td>
 
 &nbsp&nbsp&nbsp&nbsp
 <b>
-<font SIZE="4" color="ff9923">MERA</font>
-<font SIZE="5" color="white">BHARAT</font>
-<font SIZE="4" color="03ff14">MAHAAN</font>
+<font SIZE="5" color="ff9923">MERA</font>
+<font SIZE="6" color="white">BHARAT</font>
+<font SIZE="5" color="03ff14">MAHAAN</font>
 </b>
 <!--  
 &nbsp&nbsp &nbsp &nbsp&nbsp &nbsp &nbsp&nbsp 
@@ -117,13 +117,13 @@ transition: all 1s ease 0s;
 <br><br><br><br><br><br><br<br><br><br><br><br>
 
 <center><b>
-<font color="white" style="font-size:65px">
+<font color="white" style="font-size:60px">
 
 Welcome to India</font>
 <br><br<br><br>
-<div id="hello"><font color="white" style="font-size:80px"> Do come & visit &nbsp</font> <font color="cyan" style="font-size:75px"><abbr title="Uttar pradesh">U.P.</abbr></font></div>
+<div id="hello"><font color="white" style="font-size:70px"> Do come & visit &nbsp</font> <font color="cyan" style="font-size:70px"><abbr title="Uttar pradesh">U.P.</abbr></font></div>
 <font></font><br><br>
-<font color="white" style="font-size:50px">"India once is not enough"</font>
+<font color="white" style="font-size:45px">"India once is not enough"</font>
 
 </center>
 <br>
@@ -191,9 +191,8 @@ onmouseover="this.stop" style="background-color:#ba301b;border-width:20px;border
   width:20px;
   height: 20px;
   background-color:red; 
-  animation-name: example;
-  animation-duration: 0.3s  ;
-  animation-iteration-count: infinite;
+  animation: example 1s infinite;
+
 }
 
 @keyframes example {
@@ -217,14 +216,20 @@ onmouseover="this.stop" style="background-color:#ba301b;border-width:20px;border
 <tr><td>
 <center>
 <img src="taj.png" alt="hi" height="110" width="150">
-<br>
-<font style="font-size:40px;font-color:blue"><a href="index.html">Home > </a></font><font color="#731211" style="font-size:60px;">&nbsp&nbsp About us page of<br></font>&nbsp&nbsp&nbsp&nbsp&nbsp<b><font style="font-size:60px" >TAJMAHAL 
+<br><br>
+<a href="index.html" style="text-decoration:none;">
+<font style="font-size:60px;background:#26ff00;border-radius:10px;padding:5px;box-shadow:inset 5px 5px 20px #f8ff00;" color="#fff">Home ></font>
+</a>
+<font color="#731211" style="font-size:80px;font-family:'festive',cursive;">&nbsp&nbsp About us page of
+</font>
+<br><br><br>
+&nbsp&nbsp&nbsp&nbsp&nbsp<b><font style="font-size:60px;font-family:fantasy;" >TAJMAHAL 
 </font>
 </b></center>
 <br><br>
 <center>
 <form action="https://www.google.com/search" method="GET">
- <input type="text" style="width:60%;height:70px;background-color:white;font-size:30px;border:none;border-radius:10px;padding:8px;box-shadow:10px 10px 70px #7e7e7e;"  placeholder="Search about Taj Mahal">
+ <input type="text" style="width:60%;height:70px;background-color:white;font-size:30px;border:none;border-radius:10px;padding:8px;box-shadow:10px 10px 70px #7e7e7e;"  placeholder="Search about Taj Mahal....">
  &nbsp&nbsp 
 <input type="submit" style="height:100px;width:100px;background-image:url(logo.png);background-size:100% 100%;background-repeat:no-repeat;border:none;border-radius:1000px;padding:8px;box-shadow:10px 10px 70px #7e7e7e;" value="&nbsp" >
 
@@ -265,12 +270,12 @@ background-color:blue;
 <table height="3000" width="100%"  style="background-color:#eae0ca"<tr><td><center>
 <table height="2500" width="100%" border="1" style="border-color:#ffdb83;border-width:20px;border-radius:80px"><tr bgcolor="white"><td style="border-radius:80px;"><i>
 <div style="margin-top:30px;margin-left:50px;margin-bottom:30px;margin-right:50px;">
-<div data-aos="flip-up" data-aos-duration="1000" style="box-shadow:10px 0 50px 0 #731211,10px 0 50px 0 #731211;transition: all 0.5s ease 0s;padding:50px;">
+<div data-aos="flip-up" data-aos-duration="1000" style="box-shadow:10px 0 50px 0 #731211,10px 0 50px 0 #731211;transition: all 0.5s ease;padding:50px;border-radius:20px;">
 <font color="#731211" style="font-size:250px">W</font>
 <font style="font-size:40px" color="#731211"><b>ho could ever think that an eternal love leading to the saga of infinite bondage can evolve out of a desert like land and would blossom to be the reason to gift our world a poem-in-marble, The Taj!</b>
 </font></div>
 <br><br>
-<div style="box-shadow:10px 0 50px 0 #731211,10px 0 50px 0 #731211;transition: all 0.5s ease 0s;Padding:50px;">
+<div style="box-shadow:10px 0 50px 0 #731211,10px 0 50px 0 #731211;transition: all 0.5s ease;Padding:50px;border-radius:20px;">
 
 <font size="5" color="#731211">
 <div  data-aos="flip-up" data-aos-duration="1000">
@@ -383,23 +388,24 @@ background:#ff0a00;
 
 body::-webkit-scrollbar { 
 width:20px;
- /* width of the entire scrollbar */ 
 }
 
 
 body::-webkit-scrollbar-track { 
 background:#000; 
-/* color of the tracking area */ 
 }
 
 body::-webkit-scrollbar-thumb { 
-background:linear-gradient(red,yellow); 
-/* color of the scroll thumb */ 
+background:#00ff03;
 border-radius:10px; 
-/* roundness of the scroll thumb */ 
-/* border:1px solid white; */
-/* creates padding around scroll thumb */ 
 }
+
+@media screen and (max-width:899px) {
+ html{
+ 	display:none;
+}
+}
+
 
 </style>
   <script src="aos.js"></script>
