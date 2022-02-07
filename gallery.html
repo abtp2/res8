@@ -3,19 +3,31 @@
 <html lang="en" style="scroll-behavior:smooth"> 
 <head>
 				<meta charset="UTF-8">
-			 <meta name="viewport" content="width=device-width">
-
+		    <meta name="viewport"content="width=device-width,user-scalable=no">
 				<title>Tajmahal(gallery)</title>
 			  <link rel="stylesheet" href="aos.css" />
 </head>
 				
-<body style="overflow:auto;">
+<body style="overflow-x:hidden;overflow-y:auto;" bgcolor="#000">
+
+
+
+<div style="position:absolute;display:flex;top:50%;left:50%;transform:translate(-50%,-50%);height:70vh;width:70%;" id="alert-div">
+<font size="5" color="#fff" style="font-family:fantasy;padding:30px;background:url('Hero-2.gif') no-repeat;background-size:cover;border-radius:20px;border:0px solid #000;box-shadow:1px 1px 20px 10px #fff;">
+<center>
+<img src="set2.png" alt="no" height="100" width="100" style="animation: rog 4s linear infinite;">
+</center>
+<br><br><br>
+This website is not for small devices, try medium or large devices.
+</font>				
+</div>
+
 
 <section id="hi">				
-<table style="max-width:100%;"><tr><td>				
+<table style="max-width:100%;" id="dis_min"><tr><td>				
 				
 <div 
-style="background-image:url(s.gif);background-repeat:no-repeat;background-size:100% 823px;width:100%;height:822px">
+style="background:url('s.gif'),rgba(0,0,0,0.11);background-blend-mode:darken;background-repeat:no-repeat;background-size:100% 823px;width:100%;height:822px">
 
 
 <section id="yes">
@@ -87,7 +99,6 @@ border-radius:0px;
 
 box-shadow:10px 0 50px 0 cyan,10px 0 50px 0 cyan; 
 
-transition: all 0.1s ease 0s;
 
 }
 
@@ -117,7 +128,6 @@ box-shadow:0px 0 50px 0 cyan,10px 0 50px 0 cyan;
 
 border-radius:20px;
 
-transition: all 1s ease 0s;
 
 }
 
@@ -173,8 +183,8 @@ color:cyan;
 width:0ch;
 overflow:hidden;
 white-space:nowrap;
-border-right: solid 10px rgba(0,255,0,.75);
-animation:text 6s infinite steps(400000000);
+border-right: solid 10px #11ff00;
+animation:text 4s infinite steps(400000000);
 	
 font-size:60px
 }
@@ -197,7 +207,7 @@ width:30ch
 </div>
 
 <section id="ashu">
-<marquee scrollamount="15" width="100%" height="70"
+<marquee scrollamount="10" width="100%" height="70"
 onmouseover="this.stop" style="background-color:#ba301b;border-width:20px;border-color:731211;width:100%;">
 
 <br>
@@ -217,7 +227,8 @@ onmouseover="this.stop" style="background-color:#ba301b;border-width:20px;border
 <br>&nbsp&nbsp</i></font></marquee>
 
 <table height="40" style="background-image:url(hr.jpg);background-repeat:10;width:100%;" width="100%"><tr><td>
-</td></tr></table>
+
+
 
 
 
@@ -292,7 +303,7 @@ onmouseover="this.stop" style="background-color:#ba301b;border-width:20px;border
 </tr>
 <tr>
 <td style="border-style:none;  border-radius:40px;border-width:40px" data-aos="flip-up" data-aos-duration="1000" class="pashu">
-<a href="3.jpg"><img src="3.jpg" class="ashu" alt="hi" height="600" width="100%"></a>
+<img src="3.jpg" class="ashu" alt="hi" height="600" width="100%"></a>
 </td>
 <td style="border-style:none;  border-radius:40px;border-width:40px" data-aos="flip-up" data-aos-duration="1000" class="pashu">
  <img src="4.jpg" class="ashu" alt="hi" height="600" width="100%"></a>
@@ -494,12 +505,25 @@ background:#00ff03;
 border-radius:10px; 
 }
 
-@media screen and (max-width:899px) {
- html{
+@media screen and (max-width:914px) {
+ #dis_min{
  	display:none;
 }
-}
+} 
 
+@media screen and (min-width:914px) {
+ #alert-div{
+ 	display:none;
+ 	position:relative;
+ 	opacity:0;
+}
+} 
+
+@media screen and (min-width:914px) {
+ body{
+ 	background:transparent;
+}
+} 
 </style> 
 
 

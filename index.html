@@ -3,22 +3,39 @@
 <html lang="en" style="scroll-behavior:smooth"> 
 <head>
 				<meta charset="UTF-8">
-			 <meta name="viewport" content="width=device-width">
-
+			 <meta name="viewport"content="width=device-width,user-scalable=no">
 				<title>Tajmahal(By Ashutosh)</title>
 			  <link rel="stylesheet" href="aos.css" />
 </head>
 
 <section id="hi">
 				
-<body style="overflow:auto;" onload="passwordCheck()">
+<body style="overflow-x:hidden;overflow-y:auto;" onload="passwordCheck()" bgcolor="#000">
+
+
+
+
+<div style="position:absolute;display:flex;top:50%;left:50%;transform:translate(-50%,-50%);height:70vh;width:70%;" id="alert-div">
+<font size="5" color="#fff" style="font-family:fantasy;padding:30px;background:url('Hero-2.gif') no-repeat;background-size:cover;border-radius:20px;border:0px solid #000;box-shadow:1px 1px 20px 10px #fff;">
+<center>
+<img src="set2.png" alt="no" height="100" width="100" style="animation: rog 4s linear infinite;">
+</center>
+<br><br><br>
+This website is not for small devices, try medium or large devices.
+</font>				
+</div>
+
+
 
 
 				
-<table style="max-width:100%;"><tr><td>				
+<table style="max-width:100%;" id="dis_min"><tr><td>				
 				
+<div id="loading"></div>				
+
+
 <div 
-style="background-image:url('s.gif');background-repeat:no-repeat;background-size:100% 823px;width:100%;height:822px">
+style="background:url('s.gif'),rgba(0,0,0,0.11);background-blend-mode:darken;background-repeat:no-repeat;background-size:100% 823px;width:100%;height:822px">
 
 
 <section id="yes">
@@ -41,7 +58,7 @@ style="background:rgba(0,0,0,0.6);height:90px;width:100%;"><td>
 &nbsp &nbsp&nbsp &nbsp &nbsp&nbsp  &nbsp&nbsp &nbsp
  -->
 
-<span style="margin-left:5%;" id="nav_span">
+<span style="margin-left:5%;">
 <a href="index.html" class="btn2"><font color="white"size="4" style="font-weight:700;">Home</font></a>
 
 
@@ -80,7 +97,6 @@ position: relative;
 
 
 
-
 }
 
 .btn:hover{
@@ -101,8 +117,6 @@ border:5px solid cyan;
 
 border-color: cyan;
 
-
-
 font-size:16px;
 
 text-decoration: none;
@@ -120,7 +134,6 @@ box-shadow:0px 0 50px 0 cyan,10px 0 50px 0 cyan;
 
 border-radius:20px;
 
-transition: all 1s ease 0s;
 
 }
 
@@ -176,8 +189,8 @@ color:cyan;
 width:0ch;
 overflow:hidden;
 white-space:nowrap;
-border-right: solid 10px rgba(0,255,0,.75);
-animation:text 6s infinite steps(400000000);
+border-right: solid 10px #11ff00;
+animation:text 4s infinite steps(4000000000);
 	
 font-size:60px
 }
@@ -188,9 +201,9 @@ width:0ch;
 }
 35%{
 width:21.5ch;
-}
+} 
 50%{
-width:21.5ch
+width:21.5ch;
 } 
 <!--100%
 {
@@ -200,7 +213,7 @@ width:30ch
 </div>
 
 <section id="ashu">
-<marquee scrollamount="15" width="100%" height="70"
+<marquee scrollamount="10" width="100%" height="70"
 onmouseover="this.stop" style="background-color:#ba301b;border-width:20px;border-color:731211;width:100%;">
 
 <br>
@@ -247,10 +260,10 @@ onmouseover="this.stop" style="background-color:#ba301b;border-width:20px;border
     <a href="#day"><font style="font-weight:400;" color="white">Day Visiting Timing</font></a>
     <hr><br><br>
    
-      <a href="log.html"><button style="width:70%;height:30px;background-image:linear-gradient(45deg, grey,white );border-color:black;border-radius:10px;border-width:none;">
- 	<font size="4"><b><font color="black" size="4">Signup</font></b></font> </button></a>
+      <a href="log.html"><button style="width:70%;height:36px;background-image:linear-gradient(45deg, grey,white );border-color:black;border-radius:10px;border-width:none;">
+ 	<b><font color="black" size="4">Signup</font></b></button></a>
     <hr><br><br>
-    <a><button onclick="yes()" style="width:70%;height:30px;background-image:linear-gradient(45deg,grey,white);border-color:black;border-radius:10px"><font size="4"><b><font color="black" size="4">Change   theme</font></b></font> </button></a><br>
+    <a><button onclick="yes()" style="width:70%;height:36px;background-image:linear-gradient(45deg,grey,white);border-color:black;border-radius:10px"><b><font color="black" size="4">Change   theme</font></b></button></a><br>
     <hr>
     
     
@@ -346,7 +359,7 @@ The Taj ! Once More
 
 
 <center>
-<table width="95%" border="5" style="border-color:#cd8f00;margin-top:3rem;" height="2000"><tr style="border:none;"><td style="border:none;">
+<table width="95%" border="5" style="border-color:#cd8f00;margin-top:3rem;" height="2100"><tr style="border:none;"><td style="border:none;">
 
 
 <center>
@@ -354,33 +367,45 @@ The Taj ! Once More
 <tr style="border:none;">
 <td style="border:none;padding:30px;">
 
-<div>
-<i><b><font color="#af7931" style="font-size:25px">
+<div id="tr_light">
+<i><b><font color="#af7931" style="font-size:25px"  >
 One knows that 'The Taj' is one amongst the World's Wonders! One knows that it is one amongst the UNESCO World Heritage Sites!! One knows The Taj as a legend of eternal love of an pxperor for his favourite Queen!!!
-<br><br><div data-aos="fade-down" data-aos-duration="1000">
+<br><br><div data-aos="fade-down" data-aos-duration="1000"  >
 <i><b><font color="#ffdb83" style="font-size:25px;font-family: 'Festive', cursive;">
 
 Well, 'The Taj' has distinctions much beyond just these! Therefore, 'The Taj', surely, deserves your visit once and more!!!</font></div>
-<br><div data-aos="fade-right" data-aos-duration="1000">
+<br><div data-aos="fade-right" data-aos-duration="1000"  >
 <i><b><font color="#af7931" style="font-size:25px">
 Come, Walk along the pathway beside the reflecting pool with fountains upto the mausoleum crafted in soft & pure marble and jewelled with spxi precious stones, where in the serenity of paradise rests the Queen in peace with her King. Come to unfold the pages from the past to churn the charm out of its mystique and enrich your imagination about this marvel of an epic in stone, The Taj!
-</div><br><div data-aos="fade-left" data-aos-duration="1000">
+</div><br><div data-aos="fade-left" data-aos-duration="1000"  >
 Come take a dip into the saga of 'The Taj', culled out from no fiction but facts and unfurl a saga, which is set out of nothing but pure love!</div>
-<br><div data-aos="fade-right" data-aos-duration="1000">
+<br><div data-aos="fade-right" data-aos-duration="1000"  > 
 Beauty lies in the eyes of the beholder! Probably for Taj Mahal, the axiom is just the other way round. The Taj is the beauty personified! The Taj displays its different moods through its varied shades. The Taj has as many shades as any kind of beauty can ever have! The Taj is pinkish in the morning, milky white in the evening, golden when the moon shines and the intermediary variants during different hours of the day and during different seasons in a year.</div>
-<br><div data-aos="fade-left" data-aos-duration="1000">
+<br><div data-aos="fade-left" data-aos-duration="1000"  >
 Picturesque descriptions by the historians contpxporary to the period of its making, the facts revealed by the scholars & archaeologists of today and the panoramic montage of the reasons behind its making are sketched with every step you would walk towards the mausoleum the next time you visit The Taj!</div>
-<br><div data-aos="fade-right" data-aos-duration="1000">
+<br><div data-aos="fade-right" data-aos-duration="1000"  >
 A look this time at the Taj will keep you indulged with thoughts superimposing your sight and would make you feel the presence of Shah Jahan, the Maker and Mumtaz Mahal, the Reason, as though walking along with you.</div>
-<br><div data-aos="fade-left" data-aos-duration="1000">
+<br><div data-aos="fade-left" data-aos-duration="1000"  >
 Whence its breathtaking splendour makes you wonder breathlessly and you tend to pause for a while but to continue staring at 'The Taj', you would sense thpx standing beside you!</div>
-<br><div data-aos="fade-right" data-aos-duration="1000">
+<br><div data-aos="fade-right" data-aos-duration="1000"  > 
 If one has a heart that beats and that beat throbs to seek, the purity of love in galore! Surely one deserves a visit to 'The Taj', as much as 'The Taj' deserves your visit once, and more!</i></b></font>
 <br><br>
 <font color="#ffdb83" style="font-size:25px;font-family: 'Festive', cursive;">
 Come to The Taj with blissful pride! Bring the saga come alive!! Come: fall in love every time!!!
 </font>
 </div>
+
+
+<style>
+
+#tr_light:hover{
+background:url("Hero-2.gif") no-repeat;
+background-size:cover;
+padding:35px;
+boder-radius:20px;
+}
+
+</style>
 
 </td>
 </tr>
@@ -427,7 +452,6 @@ View Details
 
 
 
-
 <table width="100%" height="18" style="background:url('hr.jpg');background-repeat:repeat;margin-top:3rem;">
 <tr>
 <td>
@@ -435,6 +459,9 @@ View Details
 </tr>
 </table>
  
+
+
+<section id="day">
 
 <div style="margin-top:4rem;">
 <span>
@@ -460,8 +487,10 @@ View Details
 
 </span>
 </div>
+</section>
 
 
+<section id="fee">
 <table width="100%" height="18" style="background:url('hr.jpg');background-repeat:repeat;margin-top:3rem;">
 <tr>
 <td>
@@ -516,25 +545,60 @@ Additional Rs.200/- will be charged if one wants to <center>visit main mausoleum
 </div>
 
 
-<div style="margin-top:4rem;background:rgba(0,0,0,0.1);padding:10px;">				
+
+
+
+
+<div style="display:flex;flex-direction:row;margin-top:3rem;width:100%;">
+
+<div style="width:30%;margin-right:3.33%;margin-left:0.5%;">
+<font size="5" color="#fff" style="font-family:serif;font-weight:600;">
+Where From ?
+</font>
+<br>
+<input type="text" style="width:90%;height:50px;border:5px solid cyan;border-radius:30px;box-shadow:inset 5px 5px 20px cyan;padding-left:20px;">
+</div>
+
+<div style="width:30%;margin-right:3.33%;margin-left:0.9%;">
+<font size="5" color="#fff" style="font-family:serif;font-weight:600;">
+When ?
+</font>
+<br>
+<input type="date" style="width:90%;height:50px;border:5px solid cyan;border-radius:30px;background:#fff;box-shadow:inset 5px 5px 20px cyan;padding-left:20px;">
+</div>
+
+<div style="width:30%;margin-left:0.5%;">
+<font size="5" color="#fff" style="font-family:serif;font-weight:600;">
+How Many ?
+</font>
+<br>
+<input type="number" style="width:90%;height:50px;border:5px solid cyan;border-radius:30px;box-shadow:inset 5px 5px 20px cyan;padding-left:20px;">
+</div>
+</div>
+
+
+</section>
+
+
+<section id="near">
+<div style="margin-top:5rem;background:rgba(0,0,0,0.2);padding:10px;">				
 <span>
-<font size="6" color="red" style="font-weight:800;letter-spacing:3px;">
+<font size="6" color="red" style="font-weight:800;letter-spacing:3px;background:#fff;box-shadow:5px 5px 30px red;padding:30px;border-radius:15px;margin-top:5rem;">
 NEARBY ATTRACTIONS
 </font>		
 </span>
 <br><br>
 <span>
-<img src="akbar.jpg" alt="no" width="20%" style="border-radius:15px;box-shadow:5px 5px 30px #fff;" data-aos="fade-right" data-aos-duration="1000"> 
+<img src="akbar.jpg" alt="no" width="20%" style="border-radius:15px;box-shadow:5px 5px 30px #fff;margin-top:3rem;" data-aos="fade-right" data-aos-duration="1000"> 
 &nbsp&nbsp&nbsp&nbsp
-<img src="agra.jpg" alt="no" width="20%" style="border-radius:15px;box-shadow:5px 5px 30px #fff;" data-aos="fade-right" data-aos-duration="1000">
+<img src="agra.jpg" alt="no" width="20%" style="border-radius:15px;box-shadow:5px 5px 30px #fff;margin-top:3rem;" data-aos="fade-right" data-aos-duration="1000">
 &nbsp&nbsp&nbsp&nbsp
-<img src="it.jpg" alt="no" width="20%" style="border-radius:15px;box-shadow:5px 5px 30px #fff;" data-aos="fade-left" data-aos-duration="1000">
+<img src="it.jpg" alt="no" width="20%" style="border-radius:15px;box-shadow:5px 5px 30px #fff;margin-top:3rem;" data-aos="fade-left" data-aos-duration="1000">
 &nbsp&nbsp&nbsp&nbsp
-<img src="fateh.jpg" alt="no" width="20%" style="border-radius:15px;box-shadow:5px 5px 30px #fff;" data-aos="fade-left" data-aos-duration="1000">
+<img src="fateh.jpg" alt="no" width="20%" style="border-radius:15px;box-shadow:5px 5px 30px #fff;margin-top:3rem;" data-aos="fade-left" data-aos-duration="1000">
 </span>
 </div>
-
-
+</section>
 
 </center>				
 </td></tr></table>
@@ -545,7 +609,7 @@ NEARBY ATTRACTIONS
 
 
 
-<section>
+<section id="ht">
 
 <center>
 <table width="100%" border="3" class="night" style="border-color:#ffdc00;padding:50px;" height="100"><tr style="border:none;"><td style="border:none;">
@@ -727,6 +791,7 @@ color:#fff;
 background:#ff0a00;
 }
 
+
 body::-webkit-scrollbar { 
 width:20px;
 }
@@ -741,10 +806,33 @@ background:#00ff03;
 border-radius:10px; 
 }
 
-@media screen and (max-width:899px) {
- html{
+@media screen and (max-width:914px) {
+ #dis_min{
  	display:none;
 }
+} 
+
+@media screen and (min-width:914px) {
+ #alert-div{
+ 	display:none;
+ 	position:relative;
+ 	opacity:0;
+}
+} 
+
+@media screen and (min-width:914px) {
+ body{
+ background:transparent;
+}
+} 
+
+#loading {
+background: url('load2.gif') no-repeat center center; position:fixed;
+height: 100%;
+width: 100%;
+z-index:9999999;
+background-color:#000;
+background-size:40% 50%;
 }
 
 </style>
@@ -752,7 +840,6 @@ border-radius:10px;
 
 
 <a href="#hi"><button id="myBtn" title="Go to top"> <img src="up.png" alt="hi" height="35" width="35"></button></a>
-
 
 
  <script> 
@@ -768,28 +855,28 @@ border-radius:10px;
 
 </script> 
 
+
   <script src="aos.js"></script>
   <script>
     AOS.init();
   </script>
 
 
+<script>
+var preloader = document.getElementById('loading');
+function passwordCheck() {
+preloader.style.display = 'none';
+} 
+</script>	
+
 <!--  
+
 <script>
- function passwordCheck(){
- password=prompt('Enter Password to view full WEBSITE:'); 
- if (password=="ashu22") {
- alert("Password Is Right\nWelcome To My Website 😊");
- }else(window.location="index.html")
- } 
-</script>
- --> 
- 
-<!-- 
-<script>
-first = prompt("Enter Your First Name");
-document.getElementById('firstname').innerHTML = first; 
-</script>
- -->
+const mediaQuery = window.matchMedia('(max-width:899px)')
+
+ if (mediaQuery.matches) {
+   alert("THIS WEBSITE WILL NOT FOR SMALL DEVICES AND DOESN'T WORK ON IT. \n\nPLEASE RESIZE THE WINDOW OR YOU CAN EXIT")
+   }	
+</script><!--  -->
 </body>
 </html>
