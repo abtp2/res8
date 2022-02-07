@@ -10,19 +10,19 @@
 
 <section id="hi">
 				
-<body style="overflow-x:hidden;overflow-y:auto;" onload="passwordCheck()" bgcolor="#000">
+<body style="overflow-x:hidden;overflow-y:auto;" onload="passwordCheck()" bgcolor="#000" oncontextmenu="myright()">
 
 
 
 
-<div style="position:absolute;display:flex;top:50%;left:50%;transform:translate(-50%,-50%);height:70vh;width:70%;" id="alert-div">
-<font size="5" color="#fff" style="font-family:fantasy;padding:30px;background:url('Hero-2.gif') no-repeat;background-size:cover;border-radius:20px;border:0px solid #000;box-shadow:1px 1px 20px 10px #fff;">
+<div style="position:absolute;display:flex;top:50%;left:50%;transform:translate(-50%,-50%);height:80vh;width:75%;" id="alert-div">
+<h2   style="font-family:fantasy;padding:30px;background:url('Hero-2.gif') no-repeat;color:#fff;background-size:cover;border-radius:20px;border:0px solid #000;box-shadow:1px 1px 20px 10px #fff;text-shadow:5px 5px 5px #00ffff;">
 <center>
-<img src="set2.png" alt="no" height="100" width="100" style="animation: rog 4s linear infinite;">
+<img src="set2.png" alt="no" height="100" width="100" style="animation: rog 2s linear infinite;">
 </center>
 <br><br><br>
 This website is not for small devices, try medium or large devices.
-</font>				
+</h2>				
 </div>
 
 
@@ -260,10 +260,10 @@ onmouseover="this.stop" style="background-color:#ba301b;border-width:20px;border
     <a href="#day"><font style="font-weight:400;" color="white">Day Visiting Timing</font></a>
     <hr><br><br>
    
-      <a href="log.html"><button style="width:70%;height:36px;background-image:linear-gradient(45deg, grey,white );border-color:black;border-radius:10px;border-width:none;">
+      <a href="log.html"><button style="width:70%;height:36px;background-image:linear-gradient(45deg, #525952,#fff );border-color:black;border-radius:10px;border-width:none;">
  	<b><font color="black" size="4">Signup</font></b></button></a>
     <hr><br><br>
-    <a><button onclick="yes()" style="width:70%;height:36px;background-image:linear-gradient(45deg,grey,white);border-color:black;border-radius:10px"><b><font color="black" size="4">Change   theme</font></b></button></a><br>
+    <a><button onclick="yes()" style="width:70%;height:36px;background-image:linear-gradient(45deg,#525952,white);border-color:black;border-radius:10px"><b><font color="black" size="4">Change   theme</font></b></button></a><br>
     <hr>
     
     
@@ -277,7 +277,7 @@ onmouseover="this.stop" style="background-color:#ba301b;border-width:20px;border
 .rot{
 position:absolute;
 right:20px;
-animation: rog 4s linear infinite;
+animation: rog 2s linear infinite;
 }
 @keyframes rog {
   0% {
@@ -310,6 +310,7 @@ animation: rog 4s linear infinite;
   width: 300px;
   box-shadow: 0px 8px 16px 8px #fff;
   z-index: 1;
+  display: block;
 }
 
 .dropdown-content a {
@@ -319,10 +320,6 @@ animation: rog 4s linear infinite;
   font-size:23px;
   font-weight:600;
 	text-align:center;
-  display: block;
-}
-
- .dropdown-content {
   display: block;
 }
 
@@ -878,5 +875,11 @@ const mediaQuery = window.matchMedia('(max-width:899px)')
    alert("THIS WEBSITE WILL NOT FOR SMALL DEVICES AND DOESN'T WORK ON IT. \n\nPLEASE RESIZE THE WINDOW OR YOU CAN EXIT")
    }	
 </script><!--  -->
+
+<script>
+function myright(){
+alert("Right Click Is Disabled")
+}
+</script>
 </body>
 </html>

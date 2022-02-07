@@ -6,7 +6,7 @@
 				
 				<title>Tajmahal(contact us)</title>
 </head>
-<body>
+<body style="overflow-x:hidden;overflow-y:auto;">
 				
 <center>				
 <div class="container">
@@ -56,7 +56,7 @@ Message : &nbsp&nbsp
 </div>
 
 <div id="div5">
-<input type="submit" value="Send">
+<input type="submit" value="Send" onclick="my()">
 </div>
 
 </form>
@@ -113,7 +113,7 @@ color:orange;
 
 #h5span{
 background:#00ff03;
-padding:2px;
+padding:5px;
 border-radius:5px;
 }
 
@@ -221,26 +221,27 @@ height:18px;
 ::placeholder{
 color:orange;
 }
-
 body::-webkit-scrollbar { 
 width:20px;
- /* width of the entire scrollbar */ 
 }
 
 
 body::-webkit-scrollbar-track { 
 background:#000; 
-/* color of the tracking area */ 
 }
 
 body::-webkit-scrollbar-thumb { 
-background:linear-gradient(red,yellow); 
-/* color of the scroll thumb */ 
+background:#00ff03;
 border-radius:10px; 
-/* roundness of the scroll thumb */ 
-/* border:1px solid white; */
-/* creates padding around scroll thumb */ 
 }
+
 </style>
+
+<script>
+function my(){
+alert("Message Sending.....")
+}
+
+</script>
 </body>
 </html>

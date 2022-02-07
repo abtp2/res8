@@ -14,24 +14,24 @@
 <center>
 <div class="box" style="background: rgba(0, 0, 0, 0.1); 
  backdrop-filter: blur(100px); 
- width:83%;height:1000px;box-shadow:10px 10px 70px #000;border-radius:50px;
+ width:80%;height:1050px;box-shadow:20px 20px 90px #000;box-shadow:inset 10px 10px 40px #fff;border-radius:50px;
  margin-top:20px;margin-bottom:100px;">
+ 
 <div class="ani">
 <font  color="white" style="font-weight:bold;font-size:80px;" >
 Signup Form 
 </font></div>
 <br>
 <div><img src="s.gif" alt="no" height="280" width="295"></div>
-<table width="200px" height="600">
+<table width="200px" height="600" cellspacing="30">
 <form action="index.html">
-<tr>
+<tr style="padding:50px;">
 				
-<td><div class="out"><font
+<td>
+<div class="out"><font
 style="font-size:30px;font-weight:bold;" color="white">FIRST NAME:</font>
 <input type="text" class="in" required></div>
 </td>
-
-
 
 
 <td>
@@ -60,30 +60,30 @@ style="font-size:30px;font-weight:bold;" color="white">FIRST NAME:</font>
 <tr>
 <td><div class="out2" >
 <center>
-<input type="submit" style="font-size:25px;font-weight:bold;width:150px;font-color:white;" value="Signup">
+<input type="submit" style="font-size:30px;font-weight:bold;width:150px;border:none;box-shadow:2px 2px 20px #ffd215;padding:8px;border-radius:10px;" value="Signup">
 </td></div><td><div class="out3">
-<input type="reset" style="font-size:25px;font-weight:bold;width:150px;font-color:white;">
+<input type="reset" style="font-size:30px;font-weight:bold;width:150px;border:none;box-shadow:2px 2px 20px #ffd215;padding:8px;border-radius:10px;">
 </center>
 </div></td>
 </tr>
 <tr>
 <td>
-<a href=""><font size="5" color="white" style="margin-left:10%">Forget password?</font></a>
+<center>
+<a href=""><font size="5" color="white" style="">Forget password?</font></a>
 </center></td>
 </tr>
 </form>
 </table>
 </div></center>
 <a href="#hi">
-<div style="position:fixed;right:15px;bottom:10px;z-index:99;"><button class="up" style="">
-				
-</button>								
+<div style="position:fixed;right:15px;bottom:10px;z-index:99;"<<button class="up" style=""></button>			
+					
 </a></div>
 <style>
 body{
 background-image:url('nightview.jpg');
 background-repeat:no-repeat;
-background-size:100% 1250px;
+background-size:100% 100%;
 }
 
 .bo{
@@ -108,12 +108,19 @@ animation:rog 5s linear alternate infinite;
 
 		
 .up{
-background-color:orange;height:40px;width:40px;background-image:url('up.gif');background-size:100% 100%;background-repeat:no-repeat;
+background-color:orange;
+height:40px;
+width:40px;
+background-image:url('up.gif');
+background-size:100% 100%;
+background-repeat:no-repeat;
 border:none;
+border-radius:100px;
+padding:10px;
+transition:all 2s ease ;
 }
 .up:hover{
 background-color:yellow;
-
 }
 .in{
 height:50px;
@@ -127,11 +134,10 @@ padding-right:2px;
 }
 .out input{
 	background-color:white;
+	border-radius:20px;
 }
-.out input:hover{
-height:30px;				
-width:260px;			
-border-radius:50px;
+.out input:hover{			
+border-radius:20px;
 border-color:orange;
 border-width:7px;
 				
@@ -163,8 +169,10 @@ background-color:yellow;
 }
 .ani{
 width:0ch;
+padding:30px;
 overflow:hidden;
-animation:text 5s infinite steps(40);
+animation:5s infinite steps(40000);
+height:60px;
 white-space:nowrap;
 animation-name:example;
 border-right: solid 8px rgba(0,255,0,.75);
@@ -178,6 +186,13 @@ width:50ch;
 }
 50%{
 width:52ch
+}
+}
+
+@media screen and (max-width:899px) {
+ html{
+ 	display:none;
+}
 }
 
 </style>

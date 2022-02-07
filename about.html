@@ -10,7 +10,7 @@
 </head>
 <section id="hi">
 
-<body id="bod" style="overflow-x:hidden;overflow-y:auto;" bgcolor="#000">
+<body id="bod" style="overflow-x:hidden;overflow-y:auto;" bgcolor="#000" oncontextmenu="myright()">
 				
 				
 <div style="position:absolute;display:flex;top:50%;left:50%;transform:translate(-50%,-50%);height:70vh;width:70%;" id="alert-div">
@@ -431,11 +431,19 @@ border-radius:10px;
 
 
 </style>
+
+  
+</td></tr></table>
+
+<script>
+function myright(){
+alert("Right Click Is Disabled")
+}
+</script>
+
   <script src="aos.js"></script>
   <script>
     AOS.init();
   </script>
-  
-</td></tr></table>
 </body>
 </html>
