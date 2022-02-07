@@ -824,14 +824,14 @@ border-radius:10px;
 } 
 
 #loading {
-background: url('load2.gif') no-repeat center center; position:fixed;
+background: url('final.gif') no-repeat center center; position:fixed;
 height: 100%;
 width: 100%;
 z-index:9999999;
 background-color:#000;
-background-size:40% 50%;
+background-size:70% 60%;
+display:none;
 }
-
 </style>
 
 
@@ -858,13 +858,27 @@ background-size:40% 50%;
     AOS.init();
   </script>
 
-
 <script>
-var preloader = document.getElementById('loading');
-function passwordCheck() {
-preloader.style.display = 'none';
-} 
-</script>	
+function myright(){
+alert("Right Click Is Disabled")
+}
+</script>
+
+
+<script> setTimeout(function passwordCheck(){ document.getElementById('loading').style.display = 'block'; },0);
+ </script>
+
+<script> setTimeout(function passwordCheck(){ document.getElementById('loading').style.display = 'none'; },12000); 
+</script>
+
+
+
+
+
+
+
+
+
 
 <!--  
 
@@ -874,12 +888,17 @@ const mediaQuery = window.matchMedia('(max-width:899px)')
  if (mediaQuery.matches) {
    alert("THIS WEBSITE WILL NOT FOR SMALL DEVICES AND DOESN'T WORK ON IT. \n\nPLEASE RESIZE THE WINDOW OR YOU CAN EXIT")
    }	
-</script><!--  -->
-
-<script>
-function myright(){
-alert("Right Click Is Disabled")
-}
 </script>
+
+ -->
+ 
+ <!-- 
+<script>
+var preloader = document.getElementById('loading');
+function passwordCheck() {
+preloader.style.display = 'none';
+} 
+</script>	
+ -->
 </body>
 </html>
