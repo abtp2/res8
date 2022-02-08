@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <!-- Created by Ashutosh Pandey and Divyam Sahni-->
+
 <html lang="en" style="scroll-behavior:smooth"> 
 <head>
 				<meta charset="UTF-8">
@@ -10,23 +11,34 @@
 
 <section id="hi">
 				
-<body style="overflow-x:hidden;overflow-y:auto;" onload="passwordCheck()" bgcolor="#000" oncontextmenu="myright()">
+<body style="overflow-x:hidden;overflow-y:auto;" onload="loadingcheck()" bgcolor="#000" oncontextmenu="myright()">
 
 
 
+<!-- Content displayed screen less than 914px -->
 
 <div style="position:absolute;display:flex;top:50%;left:50%;transform:translate(-50%,-50%);height:80vh;width:75%;" id="alert-div">
-<h2   style="font-family:fantasy;padding:30px;background:url('Hero-2.gif') no-repeat;color:#fff;background-size:cover;border-radius:20px;border:0px solid #000;box-shadow:1px 1px 20px 10px #fff;text-shadow:5px 5px 5px #00ffff;">
+<h2   style="font-family:fantasy;padding:30px;background:url('Hero-2.gif') no-repeat;color:#fff;background-size:cover;border-radius:20px;border:0px solid #000;box-shadow:1px 1px 20px 10px #fff;letter-spacing:1px;font-family:fantasy;">
 <center>
 <img src="set2.png" alt="no" height="100" width="100" style="animation: rog 2s linear infinite;">
 </center>
+<br><br>
+This website will not work devices have a screen under 914x,
+which means website is not for small devices, try medium or large devices.
 <br><br><br>
-This website is not for small devices, try medium or large devices.
+<center>
+<a href="https://abp2.github.io/res6" style="background:#fff;text-decoration:none;border:3px solid cyan;border-radius:10px;padding:5px;box-shadow:5px 5px 30px cyan;color:#000;">
+<font size="3" style="">
+Contact Developer
+</font>
+</a>
+</center>
 </h2>				
 </div>
 
 
 
+<!-- Main displayed section started -->
 
 				
 <table style="max-width:100%;" id="dis_min"><tr><td>				
@@ -52,11 +64,6 @@ style="background:rgba(0,0,0,0.6);height:90px;width:100%;"><td>
 <font SIZE="6" color="white">BHARAT</font>
 <font SIZE="5" color="03ff14">MAHAAN</font>
 </b>
-<!-- &nbsp&nbsp &nbsp &nbsp&nbsp &nbsp &nbsp&nbsp 
-&nbsp &nbsp&nbsp &nbsp &nbsp&nbsp  &nbsp&nbsp &nbsp &nbsp&nbsp
-&nbsp&nbsp &nbsp &nbsp&nbsp &nbsp &nbsp&nbsp 
-&nbsp &nbsp&nbsp &nbsp &nbsp&nbsp  &nbsp&nbsp &nbsp
- -->
 
 <span style="margin-left:5%;">
 <a href="index.html" class="btn2"><font color="white"size="4" style="font-weight:700;">Home</font></a>
@@ -205,10 +212,7 @@ width:21.5ch;
 50%{
 width:21.5ch;
 } 
-<!--100%
-{
-width:30ch
-} -->
+
 </style>
 </div>
 
@@ -247,7 +251,7 @@ onmouseover="this.stop" style="background-color:#ba301b;border-width:20px;border
 <span>
 <details class="dropdown">
 <summary>
-<img src="fi2.png" alt="" height="80" width="80">
+<img src="fi2.png" alt="" height="80" width="80" style="border-radius:10px;">
 </summary>
   <div class="dropdown-content" style="left:0;background-color:#ba301b;color:white;">
 <br>    <a href="#hi"><font style="font-weight:400;" color="white">Home</font></a>
@@ -799,7 +803,7 @@ background:#000;
 }
 
 body::-webkit-scrollbar-thumb { 
-background:#00ff03;
+background:cyan;
 border-radius:10px; 
 }
 
@@ -829,34 +833,34 @@ height: 100%;
 width: 100%;
 z-index:9999999;
 background-color:#000;
-background-size:70% 60%;
+background-size:50% 40%;
 display:none;
 }
 </style>
 
 
-
 <a href="#hi"><button id="myBtn" title="Go to top"> <img src="up.png" alt="hi" height="35" width="35"></button></a>
 
 
+
+
+<!-- Scripting section -->
+
  <script> 
-
-        function yes() { 
-
-        var element = document.body; 
-
-        element.classList.toggle("dark"); 
-
- 
-        } 
-
+function yes() { 
+var element = document.body; 
+element.classList.toggle("dark"); 
+} 
 </script> 
 
 
-  <script src="aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
+
+<script src="aos.js"></script>
+<script>
+ AOS.init();
+</script>
+
+
 
 <script>
 function myright(){
@@ -865,40 +869,18 @@ alert("Right Click Is Disabled")
 </script>
 
 
-<script> setTimeout(function passwordCheck(){ document.getElementById('loading').style.display = 'block'; },0);
+
+<script> 			
+setTimeout(function loadingcheck(){
+document.getElementById('loading').style.display = 'block'; },0);
  </script>
 
-<script> setTimeout(function passwordCheck(){ document.getElementById('loading').style.display = 'none'; },12000); 
+
+<script>
+setTimeout(function loadingcheck(){ 
+document.getElementById('loading').style.display = 'none'; },12000); 
 </script>
 
 
-
-
-
-
-
-
-
-
-<!--  
-
-<script>
-const mediaQuery = window.matchMedia('(max-width:899px)')
-
- if (mediaQuery.matches) {
-   alert("THIS WEBSITE WILL NOT FOR SMALL DEVICES AND DOESN'T WORK ON IT. \n\nPLEASE RESIZE THE WINDOW OR YOU CAN EXIT")
-   }	
-</script>
-
- -->
- 
- <!-- 
-<script>
-var preloader = document.getElementById('loading');
-function passwordCheck() {
-preloader.style.display = 'none';
-} 
-</script>	
- -->
 </body>
 </html>
