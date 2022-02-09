@@ -8,6 +8,33 @@
   <link rel="stylesheet" href="aos.css" />
 </head>
 <body>
+			
+
+<!-- Content displayed screen less than 914px -->
+
+<div style="position:absolute;display:flex;top:50%;left:50%;transform:translate(-50%,-50%);height:80vh;width:75%;" id="alert-div">
+<h2   style="font-family:fantasy;padding:30px;background:url('Hero-2.gif') no-repeat;color:#fff;background-size:cover;border-radius:20px;border:0px solid #000;box-shadow:1px 1px 20px 10px #fff;letter-spacing:1px;font-family:fantasy;">
+<center>
+<img src="set2.png" alt="no" height="100" width="100" style="animation: rog 2s linear infinite;">
+</center>
+<br><br>
+This website will not work devices have a screen under 914px,
+which means website is not for small devices, try medium or large devices.
+<br><br><br>
+<center>
+<a href="https://abp2.github.io/res6" style="background:#fff;text-decoration:none;border:3px solid cyan;border-radius:10px;padding:5px;box-shadow:5px 5px 30px cyan;color:#000;">
+<font size="3" style="">
+Contact Developer
+</font>
+</a>
+</center>
+</h2>				
+</div>
+			
+
+<!-- Main section -->			
+
+<div id="dis_min">
 <section id="hi">
 <div style="box-shadow:10px 10px 70px #ffffff;width:100px;height:100px;background-image:url('bg4.jpeg');" class="bo">
 </div>
@@ -79,12 +106,16 @@ style="font-size:30px;font-weight:bold;" color="white">FIRST NAME:</font>
 <div style="position:fixed;right:15px;bottom:10px;z-index:99;"<<button class="up" style=""></button>			
 					
 </a></div>
+</div>
+
+
+
 <style>
 body{
-background-image:url('nightview.jpg');
+background:url('nightview.jpg');
 background-repeat:no-repeat;
 background-size:100% 100%;
-}
+}			
 
 .bo{
 top:0;
@@ -112,12 +143,13 @@ background-color:orange;
 height:40px;
 width:40px;
 background-image:url('up.gif');
-background-size:100% 100%;
+background-size:70% 70%;
+background-position:center;
 background-repeat:no-repeat;
 border:none;
 border-radius:100px;
 padding:10px;
-transition:all 2s ease ;
+transition:all 1s ease ;
 }
 .up:hover{
 background-color:yellow;
@@ -189,11 +221,28 @@ width:52ch
 }
 }
 
-@media screen and (max-width:899px) {
- html{
+
+
+@media screen and (max-width:914px) {
+body{
+ 	background:#000;
+}
+} 
+
+@media screen and (max-width:914px) {
+ #dis_min{
  	display:none;
 }
+} 
+
+@media screen and (min-width:914px) {
+ #alert-div{
+ 	display:none;
+ 	position:relative;
+ 	opacity:0;
 }
+} 
+
 
 </style>
 
