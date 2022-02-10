@@ -14,6 +14,7 @@
 <body style="overflow-x:hidden;overflow-y:auto;" onload="loadingcheck()" bgcolor="#000" oncontextmenu="myright()">
 
 
+<div id="loading"></div>				
 
 <!-- Content displayed screen less than 914px -->
 
@@ -42,8 +43,6 @@ Contact Developer
 
 				
 <table style="max-width:100%;" id="dis_min"><tr><td>				
-				
-<div id="loading"></div>				
 
 
 <div 
@@ -843,9 +842,9 @@ display:none;
 function yes() { 
 var element = document.body; 
 element.classList.toggle("dark"); 
+alert("Dark mode enabled");
 } 
 </script> 
-
 
 
 <script src="aos.js"></script>
