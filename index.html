@@ -16,7 +16,7 @@
 
 <div id="loading"></div>				
 
-<!-- Content displayed screen less than 914px -->
+<!-- Content displayed screen less than 940px -->
 
 <div style="position:absolute;display:flex;top:50%;left:50%;transform:translate(-50%,-50%);height:85vh;width:75%;" id="alert-div">
 <h2   style="font-family:fantasy;padding:30px;background:url('Hero-2.gif') no-repeat;color:#fff;background-size:cover;border-radius:20px;border:0px solid #000;box-shadow:1px 1px 20px 10px #fff;letter-spacing:1px;font-family:fantasy;">
@@ -24,7 +24,7 @@
 <img src="set2.png" alt="no" height="100" width="100" style="animation: rog 2s linear infinite;">
 </center>
 <br><br>
-This website will not work devices have a screen under 914px,
+This website will not work devices have a screen under 940px,
 which means website is not for small devices, try medium or large devices.
 <br><br><br>
 <center>
@@ -57,14 +57,14 @@ style="background:url('s.gif'),rgba(0,0,0,0.11);background-blend-mode:darken;bac
 style="background:rgba(0,0,0,0.6);height:90px;width:100%;"><td>
 
 <nav>
- &nbsp&nbsp&nbsp&nbsp
+ &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
 <b>
 <font SIZE="5" color="ff9923">MERA</font>
 <font SIZE="6" color="white">BHARAT</font>
 <font SIZE="5" color="03ff14">MAHAAN</font>
 </b>
 
-<span style="margin-right:5%;float:right;">
+<span style="margin-right:8%;float:right;">
 <a href="index.html" class="btn2"><font color="white"size="4" style="font-weight:700;">Home</font></a>
 
 
@@ -309,11 +309,11 @@ animation: rog 2s linear infinite;
   position:absolute;
   top:90px;
   border-radius:20px;
-  background-color:#fe1c1d;
   width: 300px;
-  box-shadow: 0px 8px 16px 8px #fff;
+  box-shadow: 5px 5px 16px 8px #fff;
   z-index: 1;
   display: block;
+  animation:opacity 1s ease;
 }
 
 .dropdown-content a {
@@ -326,6 +326,15 @@ animation: rog 2s linear infinite;
   display: block;
 }
 
+
+@keyframes opacity{
+from{
+opacity:0.5;
+}
+to{
+opacity:1;
+}
+}
 </style>
 
 
@@ -362,7 +371,7 @@ The Taj ! Once More
 
 
 <center>
-<table width="90%" border="10" style="border-color:#eccc76;border-radius:20px;margin-top:3rem;box-shadow:inset 10px 10px 70px #fff;" height="400">
+<table width="90%" border="10" style="border-color:#eccc76;border-radius:20px;margin-top:3rem;box-shadow:inset 10px 10px 70px #fff;" height="400" class="box2">
 <tr style="border:none;">
 <td style="border:none;padding:30px;">
 
@@ -404,6 +413,22 @@ padding:35px;
 border-radius:20px;
 }
 
+
+.box2{
+animation:float 3s ease-in-out infinite;
+}
+@keyframes float{
+0%{
+	 transform:translateY(0px);
+}
+50%{
+	 transform:translateY(-25px);
+}
+100%{
+	 transform:translateY(0px);
+}
+
+}
 </style>
 
 </td>
@@ -635,7 +660,7 @@ background:red;
 <br>
 <div data-aos="flip-left" data-aos-duration="1000" style="margin-top:1rem;"">
 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-<img src="nightview.jpg" style="border-radius:30px;width:95%;box-shadow:5px 5px 30px #fff;" alt="hi" height="700" width="90%"></div>
+<img src="nightview.jpg" style="border-radius:30px;width:95%;height:450px;box-shadow:5px 5px 30px #fff;" alt="hi"></div>
 							
 </td>
 </tr>
@@ -683,7 +708,7 @@ background:red;
 
 <center>
 <div data-aos="zoom-in" data-aos-duration="1000">
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3549.400553310003!2d78.0421422!3d27.175144799999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39747121d702ff6d%3A0xdd2ae4803f767dde!2sTaj%20Mahal!5e0!3m2!1sen!2sus!4v1634664921308!5m2!1sen!2sus" width="90%" height="550" style="border:2;border-color:white;border-width:25px;border-radius:20px" ></iframe></div>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3549.400553310003!2d78.0421422!3d27.175144799999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39747121d702ff6d%3A0xdd2ae4803f767dde!2sTaj%20Mahal!5e0!3m2!1sen!2sus!4v1634664921308!5m2!1sen!2sus" width="90%" height="500" style="border:2;border-color:white;border-width:25px;border-radius:20px" ></iframe></div>
 				
 <div style="margin-top:2rem;">
 <span>
@@ -798,13 +823,13 @@ background:cyan;
 border-radius:10px; 
 }
 
-@media screen and (max-width:914px) {
+@media screen and (max-width:940px) {
  #dis_min{
  	display:none;
 }
 } 
 
-@media screen and (min-width:914px) {
+@media screen and (min-width:940px) {
  #alert-div{
  	display:none;
  	position:relative;
@@ -812,14 +837,14 @@ border-radius:10px;
 }
 } 
 
-@media screen and (min-width:914px) {
+@media screen and (min-width:940px) {
  body{
  background:transparent;
 }
 } 
 
 #loading {
-background: url('final.gif') no-repeat center center; position:fixed;
+background: url('final2.gif') no-repeat center center; position:fixed;
 height: 100%;
 width: 100%;
 z-index:9999999;
@@ -842,7 +867,7 @@ display:none;
 function yes() { 
 var element = document.body; 
 element.classList.toggle("dark"); 
-alert("Dark mode enabled");
+alert("Dark/Light mode enabled");
 } 
 </script> 
 
@@ -870,7 +895,7 @@ document.getElementById('loading').style.display = 'block'; },0);
 
 <script>
 setTimeout(function loadingcheck(){ 
-document.getElementById('loading').style.display = 'none'; },12000); 
+document.getElementById('loading').style.display = 'none'; },16000); 
 </script>
 
 
